@@ -1,0 +1,103 @@
+/* <!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header1" style="box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.39); background-color: #023E74;">
+    <h1 class="text-center text-light">Banidi</h1>
+  </header>
+  <main>
+    <div class="container text-light rounded-4 text-center p-5 w-50 bg-secondary"
+      style=" box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.39);">
+      <h2>Login</h2>
+      <form action="" method="post">
+        <div class="m-3">
+          <input type="email" class="form-control" name="email" id="idemail" placeholder="Email" required><br>
+          <input type="password" class="form-control" name="senha" id="idsenha" placeholder="Senha" required><br>
+          <button type="submit" class="btn btn-success">Entrar</button>
+        </div>
+      </form>
+      <a href="criarConta.html" class="btn btn-primary">criar uma conta</a>
+    </div>
+  </main>
+</body>
+
+</html> */
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15+Charted&family=Jersey+25&display=swap');
+.jersey-25-regular {
+    font-family: "Jersey 25", serif;
+    font-weight: 100;
+    font-style: normal;
+  }  
+  
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --corheader: #023E74;
+    --cordiv1: #B9B9B9;
+    --fonteheader: 'Jersey 25',Arial,sans-serif;
+}
+
+.header2 {
+    background-color: var(--corheader);
+    max-width: 100%;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.39);
+    display: flex;
+}
+
+.header2 div {
+    width: 50%;
+    padding: 0px 50px 0px 50px;
+}
+
+.header2 h1 {
+    font-family: var(--fonteheader);
+}
+
+.div1 {
+    background-color: var(--cordiv1);
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 80vh;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.39);
+    padding: 20px 30px 20px 30px;
+    display: flex;
+}
+
+.div2 {
+    width: 49%;
+    background-color: #023f7460;
+    margin-right: 2%;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+}
+.div2 h2{
+    font-family: var(--fonteheader);
+    color: white;
+    font-weight: 100;
+    font-size: 2em;
+}
+
+.div3 {
+    width: 49%;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+}

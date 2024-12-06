@@ -4,22 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Partida - Banidi</title>
 </head>
 
 <body>
-    <header>
-        <div>
+    <header class="header2">
+        <div style="text-align: left;">
             <h1>Banidi</h1>
         </div>
-        <div>
-            <a href="#">Sair</a>
+        <div style="text-align: right;">
+            <a href="#"
+                style="color: white; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 1.2em;">Sair</a>
         </div>
     </header>
     <main>
-        <div>
-            <div>
+        <div class="div1">
+            <div class="div2">
                 <div>
                     <h4>(nome da partida)</h4><br>
                     <p>(data)</p>
@@ -29,30 +30,32 @@
                     <button>Finalizar</button>
                 </div>
             </div>
-            <div>
-                <p>Jogador</p>
-            </div>
-            <div>
+            <div class="div3">
                 <div>
-                    <h3>Transferir</h3>
-                    <form action="" method="post">
-                        <label for="jogador">De:</label><input type="text" name="jogador" id="idjogador"><br>
+                    <p>Jogador</p>
+                </div>
+                <div>
+                    <div>
+                        <h3>Transferir</h3>
+                        <form action="" method="post">
+                            <label for="jogador">De:</label><input type="text" name="jogador" id="idjogador"><br>
+                            <label for="jogador">Para: </label><input type="text" name="jogador" id="idjogador"><br>
+                            <label for="valor">Valor: </label><input type="number" name="valor" id="idvalor"
+                                step="0.01"><button type="submit">Ok</button>
+                        </form>
+                    </div>
+                    <div>
+                        <h3>Depositar</h3>
                         <label for="jogador">Para: </label><input type="text" name="jogador" id="idjogador"><br>
-                        <label for="valor">Valor: </label><input type="number" name="valor" id="idvalor"
-                            step="0.01"><button type="submit">Ok</button>
-                    </form>
-                </div>
-                <div>
-                    <h3>Depositar</h3>
-                    <label for="jogador">Para: </label><input type="text" name="jogador" id="idjogador"><br>
-                    <label for="valor">Valor: </label><input type="number" name="valor" id="idvalor"><button
-                        type="submit">Ok</button>
-                </div>
-                <div>
-                    <h3>Debitar</h3>
-                    <label for="jogador">Para: </label><input type="text" name="jogador" id="idjogador"><br>
-                    <label for="valor">Valor: </label><input type="number" name="valor" id="idvalor"><button
-                        type="submit">Ok</button>
+                        <label for="valor">Valor: </label><input type="number" name="valor" id="idvalor"><button
+                            type="submit">Ok</button>
+                    </div>
+                    <div>
+                        <h3>Debitar</h3>
+                        <label for="jogador">Para: </label><input type="text" name="jogador" id="idjogador"><br>
+                        <label for="valor">Valor: </label><input type="number" name="valor" id="idvalor"><button
+                            type="submit">Ok</button>
+                    </div>
                 </div>
             </div>
         </div>
