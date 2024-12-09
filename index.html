@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/estiloLoginECriarConta.css">
-    <title>Banidi</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <title>Banidi</title>
 </head>
+
 <body>
-    <header class="header1">
-        <div>
-            <h1>Banidi</h1>
+  <header class="header1 mb-5" style="box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.39); background-color: #023E74;">
+    <h1 class="text-center text-light">Banidi</h1>
+  </header>
+  <main>
+    <div class="container text-light rounded-4 text-center p-5 w-50 mt-5"
+      style=" box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.39); background-color: #B9B9B9;">
+      <h2>Login</h2>
+      <form action="" method="post">
+        <div class="m-3">
+          <input type="email" class="form-control" name="email" id="idemail" placeholder="Email" required><br>
+          <input type="password" class="form-control" name="senha" id="idsenha" placeholder="Senha" required><br>
+          <button type="submit" class="btn btn-success">Entrar</button>
         </div>
-    </header>
-    <main>
-        <div class="divlogin">
-            <h2>Login</h2>
-            <form action="" method="post">
-                <input type="email" name="email" id="idemail" placeholder="Email" required><br>
-                <input type="password" name="senha" id="idsenha" placeholder="Senha" required><br>
-                <button type="submit">Entrar</button>
-            </form>
-            <a href="criarConta.html">ou crie sua conta</a>
-        </div>
-    </main>
+      </form>
+      <a href="criarConta.html" class="btn btn-primary">Criar uma conta</a>
+    </div>
+  </main>
 </body>
+
 </html>

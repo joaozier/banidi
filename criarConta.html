@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/estiloLoginECriarConta.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <title>Banidi</title>
 </head>
+
 <body>
-    <header class="header1">
-        <div>
-            <a href="index.html" style="text-decoration: none;color: white;">
-                <h1>Banidi</h1>
-            </a>
-        </div>
+    <header class="header1" style="box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.39); background-color: #023E74;">
+        <h1 class="text-center text-light"><a href="bootstrap.html" style="text-decoration: none; color: white;">Banidi</a></h1>
     </header>
     <main>
-        <div class="divlogin" style="height: 45vh;">
+        <div class="container text-light rounded-4 text-center p-5 w-50" style=" box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.39); background-color: #B9B9B9;">
             <h2>Criar Conta</h2>
             <form action="" method="post">
-                <input type="text" name="nome" id="idnome" placeholder="Nome" required><br>
-                <input type="email" name="email" id="idemail" placeholder="Email" required><br>
-                <input type="password" name="senha" id="idsenha" placeholder="Senha" required><br>
-                <button type="submit">Criar</button>
+                <input type="text" class="form-control" name="nome" id="idnome" placeholder="Nome" required autocomplete="off"><br>
+                <input type="email" class="form-control" name="email" id="idemail" placeholder="Email" required autocomplete="off"><br>
+                <input type="password" class="form-control" name="senha" id="idsenha" placeholder="Senha" minlength="6" required autocomplete="off"><br>
+                <button type="submit" class="btn btn-success">Criar</button>
             </form>
         </div>
     </main>
 </body>
+
 </html>

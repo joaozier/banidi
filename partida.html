@@ -4,53 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <title>Partida - Banidi</title>
 </head>
 
 <body>
-    <header class="header2">
+    <header class="navbar" style="box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.39); background-color: #023E74; padding: 10px 50px 10px 50px;">
         <div style="text-align: left;">
-            <h1>Banidi</h1>
+            <h1 style="color: white;">Banidi</h1>
         </div>
         <div style="text-align: right;">
-            <a href="#"
-                style="color: white; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 1.2em;">Sair</a>
+            <a href="#" style="color: white; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 1.2em;">Sair</a>
         </div>
     </header>
     <main>
-        <div class="div1">
-            <div class="div2">
-                <div>
+        <div class="container rounded-4 mt-5 mb-5 p-4 shadow" style="background-color: #B9B9B9;">
+            <div class="row">
+                <div class="col">
                     <h4>(nome da partida)</h4><br>
                     <p>(data)</p>
                 </div>
-                <div>
-                    <button>Excluir</button>
-                    <button>Finalizar</button>
+                <div class="col text-end">
+                    <button class="btn btn-danger rounded-5 shadow">Excluir</button>
+                    <button class="btn btn-success rounded-5 shadow">Finalizar</button>
                 </div>
             </div>
-            <div class="div3">
-                <div>
-                    <p>Jogador</p>
+            <div class="row">
+                <div class="col rounded-3 p-3" style="background-color: #023f7460; margin-right: 10px;">
+                    <p>Jogador 1</p>
+                    <p>Jogador 2</p>
+                    <p>Jogador 3</p>
+                    <p>Jogador 4</p>
                 </div>
-                <div>
-                    <div>
+                <div class="col rounded-3 p-3" style="background-color: #023f7460; margin-left: 10px;">
+                    <div class="row rounded-3 p-3 m-2" style="background-color: #00aca99b;">
                         <h3>Transferir</h3>
                         <form action="" method="post">
-                            <label for="jogador">De:</label><input type="text" name="jogador" id="idjogador"><br>
-                            <label for="jogador">Para: </label><input type="text" name="jogador" id="idjogador"><br>
-                            <label for="valor">Valor: </label><input type="number" name="valor" id="idvalor"
-                                step="0.01"><button type="submit">Ok</button>
+                            <label for="jogador" class="form-label">De:</label><input type="text" class="form-control form-control-sm w-50" name="jogador" id="idjogador"><br>
+                            <label for="jogador" class="form-label">Para: </label><input type="text" class="form-control form-control-sm w-50" name="jogador" id="idjogador"><br>
+                            <label for="valor">Valor: </label><input type="number" class="form-control form-control-sm w-50" name="valor" id="idvalor"
+                                step="0.01"><button type="submit" class="btn btn-success rounded-5 mt-3">Ok</button>
                         </form>
                     </div>
-                    <div>
+                    <div class="row rounded-3 p-3 m-2" style="background-color: #00ac508f;">
                         <h3>Depositar</h3>
                         <label for="jogador">Para: </label><input type="text" name="jogador" id="idjogador"><br>
                         <label for="valor">Valor: </label><input type="number" name="valor" id="idvalor"><button
                             type="submit">Ok</button>
                     </div>
-                    <div>
+                    <div class="row rounded-3 p-3 m-2" style="background-color: #ac64009e;">
                         <h3>Debitar</h3>
                         <label for="jogador">Para: </label><input type="text" name="jogador" id="idjogador"><br>
                         <label for="valor">Valor: </label><input type="number" name="valor" id="idvalor"><button
